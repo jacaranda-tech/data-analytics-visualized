@@ -21,11 +21,13 @@ new Vue({
   components: { App },
   created () {
     firebase.initializeApp({
-      apiKey: '',
-      authDomain: '',
-      databaseURL: '',
-      projectId: '',
-      storageBucket: ''
+      apiKey: 'AIzaSyBAatidmAdbzZIHIJZI7Ug_WJmLcvcDVnA',
+      authDomain: 'data-analytics-visualized.firebaseapp.com',
+      databaseURL: 'https://data-analytics-visualized.firebaseio.com',
+      projectId: 'data-analytics-visualized',
+      storageBucket: 'data-analytics-visualized.appspot.com',
+      messagingSenderId: '340437126817',
+      appId: '1:340437126817:web:a5f65f37c6e3bb91'
     })
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
