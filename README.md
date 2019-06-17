@@ -20,13 +20,12 @@ git clone ......
 cd data-analytics-visualized
 
 # install dependencies
-npm install || yarn install
+yarn install
 
-# serve with hot reload at localhost:8080
-npm run dev || yarn dev
+yarn dev
 
 # build for production with minification and to build Progressive Web Apps
-npm run build || yarn build
+yarn build
 
 
 ```

@@ -31,6 +31,7 @@
       <v-toolbar-items class="hidden-xs-only">
         <v-btn
           flat
+          v-if="!userIsAuthenticated"
           v-for="item in menuItems"
           :key="item.title"
           :to="item.link">
@@ -38,14 +39,19 @@
           {{ item.title }}
 
         </v-btn>
+        <v-menu v-model="menu" v-if="userIsAuthenticated" id="user" :close-on-content-click="true">
+          <v-btn icon slot="activator">
+            <v-icon class="settings-icon" medium>more_vert</v-icon>
+          </v-btn>
+          <v-card>
         <v-btn
-          v-if="userIsAuthenticated"
           flat
           @click="onLogout">
           <v-icon left dark>exit_to_app</v-icon>
           Logout
-
         </v-btn>
+            </v-card>
+        </v-menu>
       </v-toolbar-items>
     </v-toolbar>
     <main>
@@ -58,7 +64,8 @@
   export default {
     data () {
       return {
-        sideNav: false
+        sideNav: false,
+        menu: false
       }
     },
     computed: {
