@@ -1,8 +1,8 @@
 {
-  "name": "vue-firebase-auth-vuex",
+  "name": "modular-data-science",
   "version": "1.0.0",
-  "description": "vue firebase auth vuex",
-  "author": "aofdev <aof.dev@gmail.com>",
+  "description": "Modular Data Science in Firebase",
+  "author": "Dan <daniel.becker200@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

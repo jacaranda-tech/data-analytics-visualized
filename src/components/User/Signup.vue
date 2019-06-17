@@ -19,6 +19,7 @@
                       id="email"
                       v-model="email"
                       type="email"
+                      :rules="emailRules"
                       required></v-text-field>
                   </v-flex>
                 </v-layout>
@@ -30,6 +31,7 @@
                       id="password"
                       v-model="password"
                       type="password"
+                      :rules="passwordRules"
                       required></v-text-field>
                   </v-flex>
                 </v-layout>
@@ -104,7 +106,15 @@
       return {
         email: '',
         password: '',
-        confirmPassword: ''
+        confirmPassword: '',
+        emailRules: [
+          v => !!v || 'E-mail is required',
+          v => /.+@.+/.test(v) || 'E-mail must be valid'
+        ],
+        passwordRules: [
+          v => !!v || 'Password cannot be empty',
+          v => (v && v.length <= 12 && v.length >= 5) || 'Password must be between 5 and 12 characters'
+        ]
       }
     },
     computed: {

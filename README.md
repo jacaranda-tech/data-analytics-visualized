@@ -1,6 +1,6 @@
-# vue auth firebase🔥 with vuex
+# Big Data Analytics w/ Firebase 🔥
 
-> vue authentication firebase🔥 
+> vue authentication firebase🔥
 
 ![alt tag](https://i.imgur.com/5AnRW5j.png)
 
@@ -8,29 +8,16 @@ Simplified Firebase authentication for vue projects with support for Facebook & 
 
 ## Config
 ### Step 1
-Firebase Auth Provides Method Email/Password,Google,Facebook,Github,Twitter Enabled  [Firebase console](https://console.firebase.google.com/) 
-
-### Step 2
-Initialize Firebase At ``main.js`` [Firebase Credentials](https://console.firebase.google.com/)
-``` bash
-firebase.initializeApp({
-    apiKey: '',
-    authDomain: '',
-    databaseURL: '',
-    projectId: '',
-    storageBucket: ''
-})
-```
-
+Firebase Auth Provides Method Email/Password,Google,Facebook,Github,Twitter Enabled  [Firebase console](https://console.firebase.google.com/)
 
 ## Installation
 
 ``` bash
 # Git Clone Project
-git clone git@github.com:aofdev/vue-firebase-auth-vuex.git
+git clone ......
 
 # Cd project
-cd vue-firebase-auth-vuex
+cd data-analytics-visualized
 
 # install dependencies
 npm install || yarn install
