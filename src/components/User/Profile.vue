@@ -5,7 +5,6 @@
       <v-card>
         <v-card-text>
           <div class="text-md-center">
-            <v-icon large color="green darken-2">check_circle</v-icon>
               <h4 class="headline mb-0"><b class="red--text">Name :</b> {{ user.name }}</h4>
               <h4 class="headline mb-0"><b class="red--text">Email :</b> {{ user.email }}</h4>
           </div>
