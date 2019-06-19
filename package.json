@@ -1,7 +1,7 @@
 {
-  "name": "modular-data-science",
+  "name": "vue-business-intelligence",
   "version": "1.0.0",
-  "description": "Modular Data Science in Firebase",
+  "description": "BI with Firebase and Vue.js",
   "author": "Dan <daniel.becker200@gmail.com>",
   "private": true,
   "scripts": {
