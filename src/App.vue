@@ -27,7 +27,7 @@
       <v-toolbar-side-icon v-if="userIsAuthenticated" @click.stop="sideNav = !sideNav"></v-toolbar-side-icon>
       <v-spacer/>
       <v-toolbar-title>
-        <router-link to="/" tag="span" style="cursor: pointer">Modular Data Science</router-link>
+        <router-link to="/" tag="span" style="cursor: pointer">Vue Business Intelligence</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-xs-only">
